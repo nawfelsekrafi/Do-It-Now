@@ -1,0 +1,74 @@
+:root {
+  --tomato-color: #ff6347;
+  --white-color: #fff;
+  --grey-color: #c1c0c0;
+  --task-margin: 20px;
+  --task-padding: 5px;
+}
+body {
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo__value {
+  height: 30px;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.todo__value:focus {
+  outline: none !important;
+  border: 1px solid var(--tomato-color);
+}
+.add__button {
+  background: var(--tomato-color);
+  color: var(--white-color);
+  margin: 10px 20px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tasks__container {
+  display: block;
+  border: 1px solid var(--tomato-color);
+  border-radius: 10px;
+}
+.task {
+  background: var(--grey-color);
+  color: var(--white-color);
+  margin: var(--task-margin);
+  padding: 5px 10px;
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.del {
+  background: var(--tomato-color);
+  color: var(--white-color);
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+}
+.done {
+  text-decoration: line-through;
+  text-decoration-color: var(--tomato-color);
+  text-decoration-thickness: 2px;
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+      flex-direction: column;
+    }
+  }
