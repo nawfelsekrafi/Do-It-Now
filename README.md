@@ -34,7 +34,7 @@ Users should be able to:
 
 -Light House Test
 
-![Mobile-view](./screenshots/lighthouse.png)
+![Mobile-view](./screenshots/Lighthouse.png)
 
 -Local Storage
 
